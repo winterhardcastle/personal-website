@@ -3,20 +3,24 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import { Background } from './components/Background'
+import { AboutMe } from './components/AboutMe'
+import { Projects } from './components/Projects'
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 function App() {
   return (
     <div>
       <Background />
       <Navbar/>
-      <div className='pt-60'>
-        <h1 className="text-5xl text-bold">Hi, I'm Winter Hardcastle  </h1>
+      <div className='py-72'>
+        <h1 className="text-7xl text-center text-bold">Winter Hardcastle</h1>
         <h2 className='text-2xl'>Software Engineer, Maker, Designer</h2>
+        <div className='py-32'>
+          <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
+        </div>
       </div>
-      <div className='pt-96'>
-        <h1 className="p-12 text-bold text-2xl">About Me</h1>
-        <p></p>
-      </div>
+      <Projects />
+      <AboutMe />
     </div>
   )
 }
