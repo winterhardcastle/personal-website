@@ -1,4 +1,4 @@
-export const AboutMe = () => {
+const AboutMe = () => {
 
     return (
         <div>
@@ -9,3 +9,5 @@ export const AboutMe = () => {
       </div>
     )
 }
+
+export default AboutMe

@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-export const Projects = () => {
+const Projects = () => {
     const [selected, setSelected] = useState("")
     
     return (
@@ -13,3 +13,5 @@ export const Projects = () => {
         </div>
     )
 }
+
+export default Projects

@@ -4,7 +4,7 @@ import {Speaker} from './Speaker'
 import {FilmCanister} from "./FilmCanister"
 import {useState, useEffect} from 'react'
 
-export const Background = () => {
+const Background = () => {
     const [wheelPos, setWheelPos] = useState(0)
 
     document.addEventListener("wheel", () => {
@@ -24,3 +24,5 @@ export const Background = () => {
         </div>
     )
 }   
+
+export default Background
