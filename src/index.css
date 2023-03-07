@@ -6,6 +6,7 @@
   font-family: Helvetica, Inter, system-ui, Avenir,  Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  cursor: crosshair;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,6 +26,7 @@ a {
   text-decoration: inherit;
   will-change: filter;
   transition: filter 300ms;
+  cursor: crosshair
 }
 a:hover {
   text-decoration: underline 1px solid;

@@ -9,7 +9,7 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 
 function App() {
   return (
-    <div>
+    <div> 
       <Background />
       <Navbar/>
       <div className='py-72'>

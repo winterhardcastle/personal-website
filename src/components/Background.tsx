@@ -13,7 +13,7 @@ const Background = () => {
 
 
     return (
-        <div className="-z-50 absolute top-0 left-0 w-full h-screen">
+        <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
             <Canvas >
                 {/* <OrbitControls />    */}
                 <ambientLight intensity={.2}/>
