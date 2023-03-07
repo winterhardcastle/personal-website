@@ -13,7 +13,7 @@ export const Background = () => {
 
 
     return (
-        <div className="-z-50 fixed top-0 left-0 w-full h-full">
+        <div className="-z-50 absolute top-0 left-0 w-full h-screen">
             <Canvas >
                 {/* <OrbitControls />    */}
                 <ambientLight intensity={.2}/>
