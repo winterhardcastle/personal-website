@@ -10,7 +10,7 @@ const Navbar = () => {
                 <Link className="px-12"to="/projects">PROJECTS</Link>
                 <Link to="/contact">CONTACT</Link>
             </div>
-            <a> 
+            <a target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
                 <Button color="inherit" sx={{cursor:"crosshair"}} variant="outlined">RESUME</Button>
             </a>
         </div>  

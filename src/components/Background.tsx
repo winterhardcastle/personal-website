@@ -8,7 +8,7 @@ const Background = () => {
     const [wheelPos, setWheelPos] = useState(0)
 
     document.addEventListener("wheel", () => {
-        setWheelPos(window.scrollY)
+        setWheelPos(window.scrollY/25)
     })
 
 
