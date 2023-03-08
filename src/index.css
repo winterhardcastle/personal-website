@@ -25,7 +25,7 @@ a {
   color: whitesmoke;
   text-decoration: inherit;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 200ms;
   cursor: crosshair
 }
 a:hover {
