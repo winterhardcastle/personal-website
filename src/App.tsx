@@ -4,7 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Background from './components/Background'
 import AboutMe from './components/AboutMe'
-import Projects from './components/Projects'
+import Projects from './components/projects/Projects'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 function App() {
