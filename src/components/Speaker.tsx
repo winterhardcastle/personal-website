@@ -11,7 +11,7 @@ export function Speaker(props: any) {
   const { nodes, materials } = useGLTF('/scene.gltf')
   return (
     <group {...props} dispose={null}>
-      <group position={[-40, -10, -30]} rotation={[-Math.PI / 2, 0, -Math.PI / 50]} scale={0.075}>
+      <group position={[-40, -10, -30]} rotation={[-Math.PI / 2, 0, props.wheelPos / 25]} scale={0.05}>
         <mesh geometry={nodes.Box.geometry} material={materials['ABS (White) (1)']} scale={10} />
         <mesh geometry={nodes.Logo.geometry} material={materials['Steel - Satin']} scale={10} />
         <mesh geometry={nodes.Vent_Tube.geometry} material={materials['Aluminum nitride (AlN)']} scale={10} />

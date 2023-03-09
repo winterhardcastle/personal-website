@@ -7,8 +7,8 @@ import {useState, useEffect} from 'react'
 const Background = () => {
     const [wheelPos, setWheelPos] = useState(0)
 
-    document.addEventListener("wheel", () => {
-        setWheelPos(window.scrollY/25)
+    document.addEventListener("scroll", () => {
+        setWheelPos(window.scrollY / 25)
     })
 
 
