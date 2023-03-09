@@ -15,7 +15,7 @@ function App() {
       <div className='py-72'>
         <h1 className="text-6xl text-center font-bold uppercase">Winter Hardcastle</h1>
         <h2 className='italic text-2xl uppercase'>creative software engineer and maker</h2>
-        <div className='py-32'>
+        <div onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className='pt-72'>
           <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
         </div>
       </div>
