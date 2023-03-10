@@ -2,10 +2,11 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/nav/Navbar'
-import Background from './components/Background'
-import AboutMe from './components/AboutMe'
+import Background from './components/background/Background'
+import AboutMe from './components/about/AboutMe'
 import Projects from './components/projects/Projects'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import ContactForm from './components/contact/ContactForm'
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
         </div>
-      </div>
+      </div>  
       <Projects />
       <div onClick={() => {window.scrollTo({ top: 2200, behavior: 'smooth' })}} className='pt-12 pb-32'>
           <a>
@@ -29,6 +30,7 @@ function App() {
           </a>
         </div>
       <AboutMe />
+      <ContactForm />
     </div>
   )
 }

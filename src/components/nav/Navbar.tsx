@@ -3,8 +3,8 @@ import {Link} from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <div className="z-1 flex justify-between items-center">
-            <a href='/home' className="align-center p-2 text-3xl text-center font-bold">WH</a>
+        <div className="select-none -1 flex justify-between items-center">
+            <a href='/home' className="hover:no-underline align-center p-2 text-3xl text-center font-bold">WH</a>
             <div className="p-2 flex justify-center">
                 <Link to='' onClick={() => {window.scrollTo({ top: 2200, behavior: 'smooth' })}}>ABOUT</Link>
                 <Link to='' onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className="px-12">PROJECTS</Link>
