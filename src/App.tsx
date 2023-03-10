@@ -17,20 +17,20 @@ function App() {
       <div className='py-72'>
         <h1 className="text-6xl text-center font-bold uppercase">Winter Hardcastle</h1>
         <h2 className='italic text-2xl uppercase'>creative software engineer and maker</h2>
-        <div onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className='pt-72'>
+        <div onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}} className='pt-72'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
         </div>
       </div>  
       <Projects />
-      <div onClick={() => {window.scrollTo({ top: 2200, behavior: 'smooth' })}} className='pt-12 pb-32'>
+      <div onClick={() => {document.getElementById("aboutme")?.scrollIntoView({behavior: "smooth"})}} className='pt-12 pb-32'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
       </div>
       <AboutMe />
-      <div onClick={() => {window.scrollTo({ top: 3000, behavior: 'smooth' })}} className='pt-12 pb-32'>
+      <div onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}} className='pt-12 pb-32'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>

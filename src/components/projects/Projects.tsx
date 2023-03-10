@@ -6,7 +6,7 @@ const Projects = () => {
     const [selected, setSelected] = useState("software")
 
     return (
-        <div>
+        <div id="projects">
             <h1 className="text-bold p-4 text-5xl uppercase">Projects</h1>
             <nav className="flex justify-center p-2">
                 <a onClick={() => {setSelected("software")}} className={`${selected === "software" ? 'underline text-4xl  font-bold' : 'text-3xl font-semibold'} underline-offset-8 px-16 py-4 uppercase`}>Software</a>

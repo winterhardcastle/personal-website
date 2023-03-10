@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Button } from "@mui/material";
 
 // interface Form {
 //     firstName: string;
@@ -12,8 +13,6 @@ import emailjs from "@emailjs/browser";
 const ContactForm = () => {
     const [form, setForm] = useState({firstName:"",lastName:"", email:"",phone:"",msg:"",})
         
-    emailjs.init(import.meta.env.EMAILJS_PUBLIC_KEY || "")
-
     const handleChange = (evt:any) => {
         setForm({ ...form, [evt.target.name]: evt.target.value });
     };
@@ -28,15 +27,11 @@ const ContactForm = () => {
             email: form.email,
             phone: form.phone,
             msg: form.msg,
-            }, import.meta.env.EMAILJS_PUBLIC_KEY);
+            }, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     }
 
-    useEffect(() => {
-        console.log(form)
-    })
-
     return (
-        <div className="flex flex-col items-center">
+        <div id="contact" className="flex flex-col items-center">
             <h1 className="text-5xl p-24">Contact Me!</h1>
             <form onSubmit={handleSubmit} className="w-1/2 grid gap-4 grid-rows-5 grid-cols-2"> 
                 <input 
@@ -68,7 +63,8 @@ const ContactForm = () => {
                 type="text" placeholder="Message" 
                 value={form.msg}
                 onChange={handleChange}
-                />
+                />  
+                <Button onClick={handleSubmit} type="submit" color="inherit" sx={{fontWeight:"bold", cursor:"crosshair"}} variant="outlined">SUBMIT</Button>
             </form>
         </div>
     )
