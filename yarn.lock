@@ -244,6 +244,11 @@
   resolved "https://registry.yarnpkg.com/@chevrotain/utils/-/utils-10.4.2.tgz#87735732184cc5a2f8aad2f3454082294ef3c924"
   integrity sha512-V34dacxWLwKcvcy32dx96ADJVdB7kOJLm7LyBkBQw5u5HC9WdEFw2G17zml+U3ivavGTrGPJHl8o9/UJm0PlUw==
 
+"@emailjs/browser@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@emailjs/browser/-/browser-3.10.0.tgz#74de36d95838e117cf76f7b71b68ffbe5668367d"
+  integrity sha512-pregUOBkSjjctQoAgn8DcSaeY4ypHjXAJEzWlJysM3RkQXw1ulavfHva3YYeAkxfJ7qbIhpyvRmhyQlgNG4GVg==
+
 "@emotion/babel-plugin@^11.10.6":
   version "11.10.6"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.10.6.tgz#a68ee4b019d661d6f37dec4b8903255766925ead"
@@ -711,6 +716,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.3.3.tgz#d6d531d69c0fa3a44fda7dc00b20d49b44549164"
   integrity sha512-YRHie1yQEj0kqqCTCJEfHqYSSNlZQ696QJG+MMiW4mxSl9I0ojz/eRhJS4fs88Z5i6D1SmoF9d3K99/QOhI8/w==
 
+"@types/node@^18.15.0":
+  version "18.15.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.15.0.tgz#286a65e3fdffd691e170541e6ecb0410b16a38be"
+  integrity sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==
+
 "@types/offscreencanvas@^2019.6.4":
   version "2019.7.0"
   resolved "https://registry.yarnpkg.com/@types/offscreencanvas/-/offscreencanvas-2019.7.0.tgz#e4a932069db47bb3eabeb0b305502d01586fa90d"
@@ -1059,6 +1069,11 @@ dom-helpers@^5.0.1:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
 
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
 draco3d@^1.4.1:
   version "1.5.6"
   resolved "https://registry.yarnpkg.com/draco3d/-/draco3d-1.5.6.tgz#0d570a9792e3a3a9fafbfea065b692940441c626"
@@ -1068,6 +1083,11 @@ electron-to-chromium@^1.4.284:
   version "1.4.313"
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.313.tgz"
   integrity sha512-QckB9OVqr2oybjIrbMI99uF+b9+iTja5weFe0ePbqLb5BHqXOJUO1SG6kDj/1WtWPRIBr51N153AEq8m7HuIaA==
+
+emailjs@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/emailjs/-/emailjs-4.0.1.tgz#963533d07bf41b90bc5e7651b99464bd01129dfd"
+  integrity sha512-rTN/LDvlqwU79E367ovB7FIziImzimhQcZiGmC20VcDPbf0mv3l9c3aavtMcEFaFBsycjGB5aMIhz4ZbKNeLWw==
 
 error-ex@^1.3.1:
   version "1.3.2"

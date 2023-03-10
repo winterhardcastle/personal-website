@@ -28,8 +28,13 @@ function App() {
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
-        </div>
+      </div>
       <AboutMe />
+      <div onClick={() => {window.scrollTo({ top: 3000, behavior: 'smooth' })}} className='pt-12 pb-32'>
+          <a>
+            <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
+          </a>
+      </div>
       <ContactForm />
     </div>
   )

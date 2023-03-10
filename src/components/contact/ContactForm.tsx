@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import emailjs from '@emailjs/browser';
 
 interface Form {
     firstName?: string;
@@ -10,11 +11,29 @@ interface Form {
 
 const ContactForm = () => {
     const [form, setForm] = useState<Form>()
-    
+        
+    emailjs.init(process.env.EMAILJS_PUBLIC_KEY)
+
+    const handleSubmit = (evt:any) => {
+        evt.preventDefault();
+
+        emailjs.send("service_jtjho7h","template_78utfvg",{
+            from_name: form.firstName + " " + form.lastName,
+            firstName: form.firstName,
+            lastName: form.lastName,
+            email: form.email,
+            phone: form.phone,
+            msg: form.msg,
+            }, process.env.EMAILJS_PUBLIC_KEY);
+    }
+    useEffect(() => {
+        console.log(form)
+    })
+
     return (
-        <div>
-            <h1 className="text-5xl p-8 ">Contact Me!</h1>
-            <form className="grid gap-4 grid-rows-4 grid-cols-2"> 
+        <div className="flex flex-col items-center">
+            <h1 className="text-5xl p-24">Contact Me!</h1>
+            <form onSubmit={handleSubmit} className="w-1/2 grid gap-4 grid-rows-5 grid-cols-2"> 
                 <input 
                 name="firstname"
                 type="text" placeholder="First Name" 
@@ -39,7 +58,7 @@ const ContactForm = () => {
                 value={form?.phone}
                 onChange={(e) => setForm({phone: e.target.value})}
                 />
-                <input className="col-span-2"
+                <input className="col-span-2 row-span-2"
                 name="message"
                 type="text" placeholder="Message" 
                 value={form?.msg}
