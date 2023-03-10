@@ -6,12 +6,12 @@ const Navbar = () => {
         <div className="z-1 flex justify-between items-center">
             <a href='/home' className="align-center p-2 text-3xl text-center font-bold">WH</a>
             <div className="p-2 flex justify-center">
-                <Link to='' onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}}>ABOUT</Link>
+                <Link to='' onClick={() => {window.scrollTo({ top: 2200, behavior: 'smooth' })}}>ABOUT</Link>
                 <Link to='' onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}} className="px-12">PROJECTS</Link>
                 <Link to='' onClick={() => {window.scrollTo({ top: 1100, behavior: 'smooth' })}}>CONTACT</Link>
             </div>
             <a target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
-                <Button color="inherit" sx={{cursor:"crosshair"}} variant="outlined">RESUME</Button>
+                <Button color="inherit" sx={{fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
             </a>
         </div>  
     ) 

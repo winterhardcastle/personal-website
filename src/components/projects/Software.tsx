@@ -1,6 +1,6 @@
 const Software = () => {
     return (
-        <div className="p-4 grid gap-6 grid-cols-3 grid-rows-3"> 
+        <div className="p-4 grid gap-6 grid-cols-3 grid-rows-2"> 
             <div className="transition ease-in-out group z-0 relative rounded-xl bg-cover hover:bg-[url('/src/assets/images/fischer-homepage.png')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                     <div>  
