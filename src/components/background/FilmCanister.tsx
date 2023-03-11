@@ -10,7 +10,7 @@ export function FilmCanister(props:any) {
   const { nodes, materials } = useGLTF('/film_canister.gltf')
   return (
     <group {...props} dispose={null}>
-      <group position={[30, -13, -30]} rotation={[200, 0, 90 -props.wheelPos / 25]} scale={.1}>
+      <group position={[-1.5, 1.9, -1]} rotation={[200, 0, 90 -props.wheelPos / 25]} scale={.008}>
         <mesh geometry={nodes.Case.geometry} material={materials['Stainless Steel - Polished']} scale={10} />
         <mesh geometry={nodes.Lid.geometry} material={materials['Coating - Black Oxide']} scale={[9.92, 9.98, 10]} />
         <mesh geometry={nodes.Knob.geometry} material={materials['Titanium - Polished']} scale={10} />
