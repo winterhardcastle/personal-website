@@ -17,7 +17,7 @@ const Software = () => {
                     <a href="https://github.com/orgs/FSA2211-Team-6/repositories" className="pt-2 pb-4 pl-24 " target="_blank" rel="noopener noreferrer">
                         <img width="40" height="40" src = "./src\assets\logos\iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
-                    <a href="" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
+                    <a href="https://faction-fischer.vercel.app/posts" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
                         <img width="40" height="40" src = "./src\assets\logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>

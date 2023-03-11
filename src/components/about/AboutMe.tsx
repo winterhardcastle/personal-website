@@ -2,19 +2,24 @@ const AboutMe = () => {
 
     return (
       <div id="aboutme">
-        <div className='p-24'>
+        <div>
           <h1 className="p-12 text-bold text-5xl">ABOUT ME</h1>
-          <p className="p-24">
-            My name is Winter Hardcastle, I am a web developer and maker with a passion for creating innovative and user-friendly software solutions.
-
-            My journey into the world of software development began with teaching myself to code Python, and since then, I have honed my skills in a variety of other programming languages and technologies, including(but not limited to)Javascript, Typescript, React, "PERN" Stack, SQL.
-
-            As a maker, I believe that the best software solutions are those that solve real-world problems and enhance people's lives in meaningful ways. I am always on the lookout for opportunities to use my skills and creativity to build products that make a positive impact on society.
-
-            On this website, you will find a collection of some of my best work, including web applications and other software solutions, as  well as product designs and engineering projects that I have built for clients or as personal projects. I hope that these examples will give you a sense of my style, approach, and capabilities as a developer.
-
-            If you have a project that you would like to collaborate on or if you just want to connect with me, please don't hesitate to reach out. I am always open to new opportunities and excited to work with other makers who share my passion for creating exceptional software.
-          </p>
+          <div className="flex align-center justify-center items-center p-24">
+          <div className="flex flex-col pr-24">
+            <p className="text-left p-4">
+            My name is Winter Hardcastle and I am a web developer and maker passionate about creating new devices and tinkering with existing ones.
+            </p>
+            <p className="text-left p-4">
+            When I am not busy developing websites or creating new projects, you can usually find me outside: I am an avid cyclist and climber, both sports that I enjoy exploring new routes and challenges within. I am also excited about 3D printing and design and love bringing my ideas to life through these mediums.
+            </p>
+            <p className="text-left p-4">
+            I believe that my passion for technology and creativity has helped me become a better web developer, and I constantly strive to improve my skills and stay up-to-date with the latest trends and technologies. Thanks for checking out my portfolio, I’m always looking for exciting opportunities, so please don’t hesitate to reach out if you would like to work together!
+            </p>
+          </div>
+          <div>
+            <img className="w-full rounded-2xl" src = "./src\assets\images\IMG_9493.jpeg"/>
+          </div>
+          </div>
         </div>
       </div>
     )
