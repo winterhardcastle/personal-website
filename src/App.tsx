@@ -30,7 +30,7 @@ function App() {
           </a>
       </div>
       <AboutMe />
-      <div onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}} className='pt-12 pb-64'>
+      <div onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}} className='pt-32 pb-64'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
