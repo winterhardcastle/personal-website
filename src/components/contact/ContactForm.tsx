@@ -15,7 +15,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 const ContactForm = () => {
     const [form, setForm] = useState({firstName:"",lastName:"", email:"",phone:"",msg:"",})
     const [isLoading, setIsLoading] = useState(false)
-    const [isDisabled, setIsDisabled] = useState(false)
+    const [isDisabled, setIsDisabled] = useState()
 
     const handleChange = (evt:any) => {
         setForm({ ...form, [evt.target.name]: evt.target.value });
@@ -82,6 +82,7 @@ const ContactForm = () => {
                 /> 
                 <a className="p-8 pb-24">
                 <LoadingButton
+                type="submit"
                 variant="outlined"
                 color="inherit"
                 sx={{fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
@@ -89,16 +90,12 @@ const ContactForm = () => {
                   }}}
                 loading={isLoading}
                 disabled={isDisabled}
-                onClick={handleSubmit}
                 endIcon={<SendIcon />}
                 loadingPosition="end"
-                >
+                >   
                 Send Message
                 </LoadingButton>
                 </a>
-                {/* <a className="p-8 pb-24">
-                    <Button onClick={handleSubmit} color="inherit" sx={{fontWeight:"bold", cursor:"crosshair"}} variant="outlined" endIcon={<SendIcon />}>Send Message</Button>
-                </a> */}
             </form>
         </div>
     )
