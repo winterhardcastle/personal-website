@@ -1,8 +1,8 @@
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import {Speaker} from './Speaker'
 import {FilmCanister} from "./FilmCanister"
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import { BikeBrake } from './BikeBrake'
 import { Slavboard } from './Slavboard'
 
@@ -13,6 +13,12 @@ const Background = () => {
             setWheelPos(window.scrollY / 50)
     })
 
+    // const test:any = useRef()
+    
+    // useFrame((state, delta) => {
+    //     test.current.rotation.y =+ delta
+    // })
+    
 
     return (
         <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[3600px]">
@@ -22,8 +28,8 @@ const Background = () => {
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <BikeBrake wheelPos={wheelPos}/>
                 <Speaker wheelPos={wheelPos} />
-                <FilmCanister wheelPos={wheelPos}/>
-                <Slavboard wheelPos={wheelPos}/>
+                <FilmCanister  wheelPos={wheelPos}/>
+                <Slavboard  wheelPos={wheelPos}/>
             </Canvas>
         </div>
     )
