@@ -26,10 +26,10 @@ const Background = () => {
                 {/* <OrbitControls />    */}
                 <ambientLight intensity={.2}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
-                <BikeBrake wheelPos={wheelPos}/>
-                <Speaker wheelPos={wheelPos} />
-                <FilmCanister  wheelPos={wheelPos}/>
-                <Slavboard  wheelPos={wheelPos}/>
+                <BikeBrake />
+                <Speaker />
+                <FilmCanister />
+                <Slavboard />
             </Canvas>
         </div>
     )

@@ -10,7 +10,7 @@ export function Slavboard(props:any) {
   const { nodes, materials } = useGLTF('/slavboard.gltf')
   return (
     <group {...props} dispose={null}>
-      <group position={[1.8, .5, 0]} rotation={[-0.44, 0.44, props.wheelPos/25]} scale={0.003}>
+      <group position={[1.8, .5, 0]} rotation={[-0.44, 0.44, .75]} scale={0.003}>
         <mesh geometry={nodes.Body1_4.geometry} material={nodes.Body1_4.material} />
         <mesh geometry={nodes.Body1_5.geometry} material={nodes.Body1_5.material} />
         <mesh geometry={nodes.Body1_6.geometry} material={nodes.Body1_6.material} />
