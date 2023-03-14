@@ -1,6 +1,6 @@
 const Software = () => {
     return (
-        <div className="p-4 grid gap-6 grid-cols-3 grid-rows-2"> 
+        <div className="p-4 grid gap-6 md:grid-cols-3 grid-cols-2 grid-rows-2"> 
             <div className="transition ease-in-out group z-0 relative rounded-xl bg-cover hover:bg-[url('/src/assets/images/fischer-homepage.png')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                     <div>  
@@ -8,7 +8,7 @@ const Software = () => {
                         <p className="py-2 px-4">
                             <span className="font-bold">Tech: </span> Typescript, NEXT.JS, Prisma, tailwindcss
                         </p>
-                        <p className="py-2 px-4">
+                        <p className="max-md:hidden py-2 px-4">
                             Fischer is a fact-checking webapp and chrome extension that integrates NLP 
                             and user contributions to determine the truthiness of information on the web.
                         </p>
@@ -28,7 +28,7 @@ const Software = () => {
                 <p className="py-2 px-4">
                     <span className="font-bold">Tech: </span> Typescript, React.js, Three.js, tailwindcss
                 </p>
-                <p className="py-2 px-4">
+                <p className="max-md:hidden py-2 px-4">
                     This is the website that you are currently browsing, and functions as a portfolio of the most
                     meaningful work that I have done! 
                 </p>
@@ -47,7 +47,7 @@ const Software = () => {
                 <p className="py-2 px-4">
                     <span className="font-bold">Tech: </span> Python, Pandas
                 </p>
-                <p className="py-2 px-4 text-bold">
+                <p className="max-md:hidden py-2 px-4 text-bold">
                     Developed for Anduril Industries(formerly Dive Technologies),  Dive Data Depot is a data aggregation 
                     and analysis program that obtains critical mission statistics from AUV sensor data.
                 </p>
@@ -66,7 +66,7 @@ const Software = () => {
                 <p className="py-2 px-4">
                     <span className="font-bold">Tech: </span> Python, Raspberry PI, 
                 </p>
-                <p className="py-2 px-4">
+                <p className="max-md:hidden py-2 px-4">
                     This program displays a real-time visual representation of the success of your stock portfolio using Neopixel LED lights and
                     the Robinhood API! 
                 </p>
@@ -85,7 +85,7 @@ const Software = () => {
                 <p className="py-2 px-4">
                     <span className="font-bold">Tech: </span> Javascript, React, Sequelize, tailwindcss
                 </p>
-                <p className="py-2 px-4">
+                <p className="max-md:hidden py-2 px-4">
                     An E-commerce website with a large collection of coffees for sale. My work on this project was mainly concentrated on the
                     checkout feature, as well as the back-end/data models. 
                 </p>

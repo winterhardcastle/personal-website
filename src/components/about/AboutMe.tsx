@@ -3,9 +3,9 @@ const AboutMe = () => {
     return (
       <div id="aboutme">
         <div>
-          <h1 className="p-12 text-bold text-5xl">ABOUT ME</h1>
-          <div className="flex align-center justify-center items-center p-12">
-          <div className="text-xl flex flex-col pr-24">
+          <h1 className="p-12 text-bold md:text-5xl text-3xl">ABOUT ME</h1>
+          <div className="flex align-center justify-center items-center md:p-12">
+          <div className="text-xl flex flex-col md:pr-24">
             <p className="text-left p-4">
             My name is Winter Hardcastle and I am a web developer and maker passionate about creating new devices and tinkering with existing ones.
             </p>
@@ -16,7 +16,7 @@ const AboutMe = () => {
             I believe that my passion for technology and creativity has helped me become a better web developer, and I constantly strive to improve my skills and stay up-to-date with the latest trends and technologies. Thanks for checking out my portfolio, I’m always looking for exciting opportunities, so please don’t hesitate to reach out if you would like to work together!
             </p>
           </div>
-          <div className="pb-4">
+          <div className="max-md:hidden pb-4">
             <img className="w-full rounded-2xl" src = "./src\assets\images\IMG_9493.jpeg"/>
           </div>
           </div>
