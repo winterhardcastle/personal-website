@@ -8,6 +8,7 @@ import Projects from './components/projects/Projects'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import ContactForm from './components/contact/ContactForm'
 import { Button } from '@mui/material'
+import { hackerText } from './utils/functions'
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
       <Background />
       <Navbar/>
       <div className='py-64'>
-        <h1 className="md:text-6xl text-3xl text-center font-bold uppercase">Winter Hardcastle</h1>
+        <div>
+          <h1 onMouseOver={hackerText} data-value="Winter Hardcastle" className="md:text-6xl text-3xl text-center font-bold uppercase">Winter Hardcastle</h1>
+        </div>  
         <h2 className='pb-32 italic text-2xl uppercase'>creative software engineer and maker</h2>
         <a className="p-16">
           <Button 
