@@ -7,6 +7,7 @@ import AboutMe from './components/about/AboutMe'
 import Projects from './components/projects/Projects'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import ContactForm from './components/contact/ContactForm'
+import { Button } from '@mui/material'
 
 
 function App() {
@@ -14,10 +15,20 @@ function App() {
     <div> 
       <Background />
       <Navbar/>
-      <div className='py-72'>
+      <div className='py-64'>
         <h1 className="text-6xl text-center font-bold uppercase">Winter Hardcastle</h1>
-        <h2 className='italic text-2xl uppercase'>creative software engineer and maker</h2>
-        <div onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}} className="pt-96">
+        <h2 className='pb-32 italic text-2xl uppercase'>creative software engineer and maker</h2>
+        <a className="p-16 ">
+          <Button 
+          onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}}
+          color="inherit" 
+          size="large" 
+          sx={{fontSize: "18px", width: 1/5, fontWeight:"bold", cursor:"crosshair"}} 
+          variant="outlined"> 
+          Contact Me! 
+          </Button>
+        </a>
+        <div onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}} className="pt-64">
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
