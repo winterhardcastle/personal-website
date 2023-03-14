@@ -1,9 +1,11 @@
+import { hackerText } from "../../utils/functions";
+
 const AboutMe = () => {
 
     return (
       <div id="aboutme">
         <div>
-          <h1 className="p-12 text-bold md:text-5xl text-3xl">ABOUT ME</h1>
+          <h1 onMouseEnter={hackerText} data-value="ABOUT ME" className="p-12 font-bold md:text-5xl text-3xl">ABOUT ME</h1>
           <div className="flex align-center justify-center items-center md:p-12">
           <div className="text-xl flex flex-col md:pr-24">
             <p className="text-left p-4">

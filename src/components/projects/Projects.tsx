@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { hackerText } from '../../utils/functions'
 import Hardware from './Hardware'
 import Software from './Software'
 
@@ -7,7 +8,7 @@ const Projects = () => {
 
     return (
         <div id="projects">
-            <h1 className="text-bold p-4 md:text-5xl text-2xl uppercase">Projects</h1>
+            <h1 onMouseEnter={hackerText} data-value="PROJECTS" className="font-bold p-4 md:text-5xl text-2xl uppercase">Projects</h1>
             <nav className="flex justify-center p-2">
                 <a onClick={() => {setSelected("software")}} className={`${selected === "software" ? 'underline font-bold' : 'font-semibold'} text-2xl underline-offset-8 md:px-12 px-4 py-4 uppercase`}>Software</a>
                 <a onClick={() => {setSelected("hardware")}} className={`${selected === "hardware" ? 'underline font-bold' : 'font-semibold'} text-2xl underline-offset-8 md:px-12 px-4 py-4 uppercase`}>Hardware</a>
