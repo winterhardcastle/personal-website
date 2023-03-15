@@ -17,7 +17,7 @@ function App() {
       <Background />
       <Navbar/>
       <div className='py-64'>
-        <div >
+        <div className="inline-block">
           <h1 onMouseOver={hackerText} data-value="Winter Hardcastle" className="md:text-7xl text-3xl text-center font-bold uppercase">Winter Hardcastle</h1>
         </div>  
         <h2 className='pb-32 italic text-2xl uppercase'>creative software engineer and maker</h2>
@@ -38,13 +38,13 @@ function App() {
         </div>
       </div>  
       <Projects />
-      <div onClick={() => {document.getElementById("aboutme")?.scrollIntoView({behavior: "smooth"})}} className='pt-12 pb-32'>
+      <div onClick={() => {document.getElementById("aboutme")?.scrollIntoView({behavior: "smooth"})}} className='pt-20 pb-32'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>
       </div>
       <AboutMe />
-      <div onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}} className='pt-52 pb-64'>
+      <div onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}} className='pt-44 pb-64'>
           <a>
             <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
           </a>

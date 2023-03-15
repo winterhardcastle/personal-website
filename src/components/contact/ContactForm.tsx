@@ -81,12 +81,12 @@ const ContactForm = () => {
                 value={form.msg}
                 onChange={handleChange}
                 /> 
-                <a className="p-8 pb-24">
+                <a className="pb-24">
                 <LoadingButton
                 type="submit"
                 variant="outlined"
                 color="inherit"
-                sx={{fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
+                sx={{width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
                     color: "#c0c0c0"
                   }}}
                 loading={isLoading}

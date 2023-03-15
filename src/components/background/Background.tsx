@@ -9,9 +9,9 @@ import { Slavboard } from './Slavboard'
 const Background = () => {
     const [wheelPos, setWheelPos] = useState(0)
 
-    document.addEventListener("scroll", () => {
-            setWheelPos(window.scrollY / 50)
-    })
+    // document.addEventListener("scroll", () => {
+    //         setWheelPos(window.scrollY / 50)
+    // })
 
     // const test:any = useRef()
     
@@ -23,7 +23,7 @@ const Background = () => {
     return (
         <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[3600px]">
             <Canvas>
-                {/* <OrbitControls />    */}
+                <OrbitControls />
                 <ambientLight intensity={.2}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <BikeBrake />
