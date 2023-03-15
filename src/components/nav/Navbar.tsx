@@ -23,12 +23,12 @@ const Navbar = () => {
                 <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}}>PROJECTS</a>
                 <a onMouseOver={hackerText} data-value="CONTACT" className="pr-12" onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}}>CONTACT</a>
                 <a className="max-md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
-                    <Button color="inherit" sx={{fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
+                    <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
                 </a>
             </div>
         </div>
         <a className="md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
-            <Button color="inherit" sx={{fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
+            <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
         </a>
         </>
     ) 

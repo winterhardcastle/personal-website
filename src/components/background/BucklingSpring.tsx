@@ -11,7 +11,7 @@ export function BucklingSpring(props:any) {
   return (
     <group {...props} dispose={null}>
       <group scale={0.5}>
-        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[-3.19, 8.82, -4.56]} rotation={[-1.13, 0, 0]} scale={10} />
+        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[-10, 8.82, -4.56]} rotation={[-1.13, 0, 0]} scale={1} />
       </group>
       <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />
     </group>

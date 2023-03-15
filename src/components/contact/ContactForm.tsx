@@ -86,7 +86,7 @@ const ContactForm = () => {
                 type="submit"
                 variant="outlined"
                 color="inherit"
-                sx={{width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
+                sx={{fontFamily: "monospace", width: "175px",fontWeight:"bold", cursor:"crosshair", "&.Mui-disabled": {
                     color: "#c0c0c0"
                   }}}
                 loading={isLoading}

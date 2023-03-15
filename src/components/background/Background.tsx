@@ -1,18 +1,22 @@
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Stars } from '@react-three/drei'
 import {Speaker} from './Speaker'
 import {FilmCanister} from "./FilmCanister"
 import {useState, useEffect, useRef} from 'react'
 import { BikeBrake } from './BikeBrake'
 import { Slavboard } from './Slavboard'
+import { BucklingSpring } from './BucklingSpring'
+import { KeyboardMounts } from './KeyboardMounts'
+import { ElektraBoilerCap } from './ElektraBoilerCap'
+import { ElektraSteamKnob } from './ElektraSteamKnob'
 
 const Background = () => {
     const [wheelPos, setWheelPos] = useState(0)
 
-    // document.addEventListener("scroll", () => {
-    //         setWheelPos(window.scrollY / 50)
-    // })
-
+    document.addEventListener("scroll", () => {
+       setWheelPos(window.scrollY)
+    })
+    
     // const test:any = useRef()
     
     // useFrame((state, delta) => {
@@ -21,17 +25,24 @@ const Background = () => {
     
 
     return (
-        <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[3600px]">
-            <Canvas>
-                <OrbitControls />
+        <>
+        {/* <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[4300px]"> */}
+            {/* <Canvas > */}
+                {/* <OrbitControls /> */}
+                <Stars radius={100} depth={50} count={1500} factor={4} saturation={0} fade speed={1}/>
                 <ambientLight intensity={.2}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <BikeBrake />
                 <Speaker />
                 <FilmCanister />
                 <Slavboard />
-            </Canvas>
-        </div>
+                <BucklingSpring />
+                <KeyboardMounts />
+                <ElektraBoilerCap />
+                <ElektraSteamKnob />
+            {/* </Canvas> */}
+        {/* </div> */}
+        </>
     )
 }   
 
