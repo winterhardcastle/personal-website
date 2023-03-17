@@ -26,7 +26,7 @@ const Software = () => {
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Personal Website</h1>
                 <p className="py-2 px-4">
-                    <span className="font-bold">Tech: </span> Typescript, React.js, Three.js, tailwindcss
+                    <span className="font-bold">Tech: </span> Typescript, React, Three.js, tailwindcss
                 </p>
                 <p className="max-md:hidden py-2 px-4">
                     This is the website that you are currently browsing, and functions as a portfolio of the most
