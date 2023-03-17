@@ -17,14 +17,14 @@ function App() {
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
       <Canvas>
-      <ScrollControls pages={3.3} damping={0.1}>
+      <ScrollControls pages={3.8} damping={0.1}>
         <Scroll>  
           <Background />
         </Scroll>
         <Scroll html>
           <div id="mainhtmlcontainer"  className="py-8 px-64">
           <Navbar/>
-          <div className='py-64'>
+          <div className='py-72'>
             <div className="inline-block">
               <h1 onMouseOver={hackerText} data-value="Winter Hardcastle" className="md:text-7xl text-3xl text-center font-bold uppercase">Winter Hardcastle</h1>
             </div>  
@@ -44,7 +44,7 @@ function App() {
                 <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
               </a>
             </div> */}
-          </div>  
+          </div>
           <Projects />
           {/* <div onClick={() => {document.getElementById("aboutme")?.scrollIntoView({behavior: "smooth"})}} className='pt-20 pb-32'>
               <a>
@@ -58,7 +58,7 @@ function App() {
               </a>
           </div> */}
           <ContactForm />
-          <div className="pt-24">
+          <div className="pt-32">
             <p onMouseOver={hackerText} data-value="© 2023 Winter Hardcastle" className="text-sm font-light pt-4 border-t">© 2023 Winter Hardcastle</p>
           </div>
           </div>
