@@ -1,7 +1,7 @@
 import { Button } from "@mui/material"
 import { useScroll } from "@react-three/drei"
 import { useFrame } from "@react-three/fiber"
-import { hackerText } from "../../utils/functions"
+import { hackerText, scrollToElement } from "../../utils/functions"
 
 
 const Navbar = () => {
@@ -23,9 +23,9 @@ const Navbar = () => {
                 </a>
             </div>
             <div className="p-4 flex items-center">
-                <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {data.el.scrollTop+=2500}}>ABOUT</a>
-                <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {data.el.scrollTop+=1300}}>PROJECTS</a>
-                <a onMouseOver={hackerText} data-value="CONTACT" className="pr-12" onClick={() => {data.el.scrollTop+=3700}}>CONTACT</a>
+                <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {data.el.scrollTop+= scrollToElement('aboutme') + 500}}>ABOUT</a>
+                <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {data.el.scrollTop+=scrollToElement('projects') + 350}}>PROJECTS</a>
+                <a onMouseOver={hackerText} data-value="CONTACT" className="pr-12" onClick={() => {data.el.scrollTop+=data.el.scrollHeight}}>CONTACT</a>
                 <a className="max-md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
                     <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
                 </a>

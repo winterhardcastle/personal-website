@@ -12,9 +12,12 @@ import { hackerText } from './utils/functions'
 import { Scroll, ScrollControls, Html, useScroll } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import ContactCTA from './components/nav/ContactCTA'
+import { useRef } from 'react'
 
 
 function App() {
+  const scrollHtmlDiv = useRef(null!) as React.MutableRefObject<THREE.Mesh>;
+  
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
       <Canvas>
@@ -22,7 +25,7 @@ function App() {
         <Scroll>  
           <Background />
         </Scroll>
-        <Scroll html>
+        <Scroll ref={scrollHtmlDiv} html>
           <div className="py-8 px-72">
           <Navbar />
           <div className='py-72'>
