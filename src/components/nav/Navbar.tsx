@@ -1,11 +1,15 @@
 import { Button } from "@mui/material"
+import { useScroll } from "@react-three/drei"
+import { useFrame } from "@react-three/fiber"
 import { hackerText } from "../../utils/functions"
 
 
 const Navbar = () => {
+    const data = useScroll()
+
     return (
-        <>
-        <div className="select-none flex justify-between items-center">
+        <div>
+        <div className=" select-none flex justify-between items-center">
             {/* <a href='/home' className="hover:no-underline align-center p-2 text-5xl text-center font-bold">WH</a> */}
             <div className="max-md:hidden flex">
                 <a href="https://github.com/winterhardcastle" className="pt-2 pb-4 " target="_blank" rel="noopener noreferrer">
@@ -19,9 +23,9 @@ const Navbar = () => {
                 </a>
             </div>
             <div className="p-4 flex items-center">
-                <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {document.getElementById("aboutme")?.scrollIntoView({behavior: "smooth"})}}>ABOUT</a>
-                <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}}>PROJECTS</a>
-                <a onMouseOver={hackerText} data-value="CONTACT" className="pr-12" onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}}>CONTACT</a>
+                <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {data.el.scrollTop+=2500}}>ABOUT</a>
+                <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {data.el.scrollTop+=1300}}>PROJECTS</a>
+                <a onMouseOver={hackerText} data-value="CONTACT" className="pr-12" onClick={() => {data.el.scrollTop+=3700}}>CONTACT</a>
                 <a className="max-md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
                     <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
                 </a>
@@ -30,7 +34,7 @@ const Navbar = () => {
         <a className="md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
             <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
         </a>
-        </>
+        </div>
     ) 
 }
 

@@ -9,8 +9,9 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import ContactForm from './components/contact/ContactForm'
 import { Button } from '@mui/material'
 import { hackerText } from './utils/functions'
-import { Scroll, ScrollControls } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
+import { Scroll, ScrollControls, Html, useScroll } from '@react-three/drei'
+import { Canvas, useFrame } from '@react-three/fiber'
+import ContactCTA from './components/nav/ContactCTA'
 
 
 function App() {
@@ -22,23 +23,14 @@ function App() {
           <Background />
         </Scroll>
         <Scroll html>
-          <div id="mainhtmlcontainer"  className="py-8 px-64">
-          <Navbar/>
+          <div className="py-8 px-72">
+          <Navbar />
           <div className='py-72'>
             <div className="inline-block">
               <h1 onMouseOver={hackerText} data-value="Winter Hardcastle" className="md:text-7xl text-3xl text-center font-bold uppercase">Winter Hardcastle</h1>
             </div>  
             <h2 className='pb-32 italic text-2xl uppercase'>creative software engineer and maker</h2>
-            <a className="p-16">
-              <Button 
-              onClick={() => {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}}
-              color="inherit" 
-              size="large" 
-              sx={{fontFamily: "monospace",fontSize: "18px", width: '200px', fontWeight:"bold", cursor:"crosshair"}} 
-              variant="outlined">
-              Contact Me! 
-              </Button>
-            </a>
+            <ContactCTA/>
             {/* <div onClick={() => {document.getElementById("projects")?.scrollIntoView({behavior: "smooth"})}} className="pt-64">
               <a>
                 <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
@@ -58,7 +50,7 @@ function App() {
               </a>
           </div> */}
           <ContactForm />
-          <div className="pt-32">
+          <div id="footer" className="pt-24">
             <p onMouseOver={hackerText} data-value="© 2023 Winter Hardcastle" className="text-sm font-light pt-4 border-t">© 2023 Winter Hardcastle</p>
           </div>
           </div>

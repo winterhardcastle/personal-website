@@ -1,7 +1,8 @@
+import { useScroll } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 import { hackerText } from "../../utils/functions";
 
 const AboutMe = () => {
-
     return (
       <div className="pb-44" id="aboutme">
         <div>
