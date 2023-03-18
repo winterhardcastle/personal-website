@@ -1,5 +1,4 @@
 
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Navbar from './components/nav/Navbar'
 import Background from './components/background/Background'
@@ -9,29 +8,37 @@ import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrow
 import ContactForm from './components/contact/ContactForm'
 import { Button } from '@mui/material'
 import { hackerText } from './utils/functions'
-import { Scroll, ScrollControls, Html, useScroll } from '@react-three/drei'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { Scroll, ScrollControls} from '@react-three/drei'
+import { Canvas} from '@react-three/fiber'
 import ContactCTA from './components/nav/ContactCTA'
-import { useEffect, useRef, useState } from 'react'
+import {useEffect, useLayoutEffect, useRef, useState } from 'react'
+
 
 
 function App() {
-  const scrollHtmlDiv = useRef(null!) as React.MutableRefObject<THREE.Mesh>;
-  const [numPages, setNumPages] = useState(3.8)
+  const [numPages, setNumPages] = useState(5)
+  const [scrolled, setScrolled] = useState<boolean>()
   
   const computePages = () => {
     const footer = document.getElementById("footer")
-    const pages:number = footer!==null ? (footer.getBoundingClientRect().bottom + 100) / window.innerHeight : 4
-    return pages
+    const pages:number = footer!==null ? (footer.getBoundingClientRect().bottom + 25) / window.innerHeight : 5
+    setNumPages(pages)
   }
 
-  useEffect(() => {
-    setNumPages(computePages())
-  }, [])
-  
-  window.addEventListener("resize", () => {
-    setNumPages(computePages())  
-  })
+  const handleEvt = (evt:any) => {
+    if(evt.type === "wheel"){
+      if(scrolled !== true){
+        window.removeEventListener("wheel", handleEvt)
+        setScrolled(true)
+        computePages()
+      }
+    }else{
+      computePages()
+    }
+  }
+
+  window.addEventListener("wheel", handleEvt)
+  window.addEventListener("resize", handleEvt)
 
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
@@ -40,7 +47,7 @@ function App() {
         <Scroll>  
           <Background />
         </Scroll>
-        <Scroll ref={scrollHtmlDiv} html>
+        <Scroll html>
           <div className="py-8 px-72">
           <Navbar />
           <div className='py-72'>
@@ -67,7 +74,7 @@ function App() {
                 <KeyboardDoubleArrowDownIcon sx={{ color: "#ffffff", fontSize: 60}} />
               </a>
           </div> */}
-          <ContactForm />
+          <ContactForm/>
           <div id="footer" className="pt-24">
             <p onMouseOver={hackerText} data-value="© 2023 Winter Hardcastle" className="text-sm font-light pt-4 border-t">© 2023 Winter Hardcastle</p>
           </div>
