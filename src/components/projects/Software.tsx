@@ -79,7 +79,7 @@ const Software = () => {
                     </a>
                 </div>
             </div>
-            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('images/coffee-castle.png'))] flex-col">
+            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('/images/coffee-castle.png')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Coffee Castle</h1>
                 <p className="py-2 px-4">
