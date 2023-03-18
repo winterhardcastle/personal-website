@@ -17,7 +17,7 @@ const Background = () => {
         {/* <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[4300px]"> */}
             {/* <Canvas > */}
                 {/* <OrbitControls /> */}
-                <Stars radius={100} depth={50} count={1500} factor={4} saturation={0} fade speed={1}/>
+                <Stars radius={100} depth={50} count={1000} factor={4} saturation={0} fade speed={1}/>
                 <ambientLight intensity={.2}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
                 <BikeBrake />
