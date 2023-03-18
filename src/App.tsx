@@ -12,17 +12,25 @@ import { hackerText } from './utils/functions'
 import { Scroll, ScrollControls, Html, useScroll } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import ContactCTA from './components/nav/ContactCTA'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 
 function App() {
   const scrollHtmlDiv = useRef(null!) as React.MutableRefObject<THREE.Mesh>;
   const [numPages, setNumPages] = useState(3.8)
   
-  window.addEventListener("resize", () => {
+  const computePages = () => {
     const footer = document.getElementById("footer")
     const pages:number = footer!==null ? (footer.getBoundingClientRect().bottom + 100) / window.innerHeight : 4
-    setNumPages(pages)  
+    return pages
+  }
+
+  useEffect(() => {
+    setNumPages(computePages())
+  }, [])
+  
+  window.addEventListener("resize", () => {
+    setNumPages(computePages())  
   })
 
   return (
