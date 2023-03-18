@@ -5,7 +5,7 @@ Command: npx gltfjsx@6.1.4 -t buckling_spring.gltf
 
 import * as THREE from 'three'
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF, OrbitControls } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 
 type GLTFResult = GLTF & {
@@ -20,12 +20,14 @@ type GLTFResult = GLTF & {
 export function BucklingSpring(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/buckling_spring.gltf') as GLTFResult
   return (
+    <>
     <group {...props} dispose={null}>
       <group scale={0.5}>
-        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[-10, 5, 2]} rotation={[-1.13, 0, 0]} scale={1} />
+        <mesh geometry={nodes.Adapter.geometry} material={materials['Plastic - Translucent Matte (White)']} position={[-9, -65, 2]} rotation={[-1.13, 0, -.4]} scale={1} />
       </group>
       <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />
     </group>
+    </>
   )
 }
 

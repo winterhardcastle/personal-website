@@ -9,6 +9,7 @@ import { BucklingSpring } from './BucklingSpring'
 import { KeyboardMounts } from './KeyboardMounts'
 import { ElektraBoilerCap } from './ElektraBoilerCap'
 import { ElektraSteamKnob } from './ElektraSteamKnob'
+import { BadClientele } from './BadClientele'
 
 const Background = () => {
     
@@ -28,6 +29,7 @@ const Background = () => {
                 <KeyboardMounts />
                 <ElektraBoilerCap />
                 <ElektraSteamKnob />
+                <BadClientele />
             {/* </Canvas> */}
         {/* </div> */}
         </>

@@ -29,7 +29,7 @@ export function BikeBrake(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/bike_brake.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[-1.5, 3.8, -1]} rotation={[-1.4, 0, Math.PI / 6]} scale={0.005}>
+      <group position={[2, 1, 4]} rotation={[-1.4, 0, Math.PI / 9]} scale={0.005}>
         <group position={[-51, 6.59, 33.89]} rotation={[-Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes.Body1.geometry} material={materials['Steel - Satin']} scale={10} />
         </group>
