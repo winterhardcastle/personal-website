@@ -6,10 +6,14 @@ I enjoy using interfaces that manage to be interesting and dymanic despite their
 
 # Technologies
 
-Typescript
-React.js
-Three.js
-tailwindcss
+<h2> Typescript </h2>
+<br/>
+<h2> React.js </h2>
+<br/>
+<h2> Three.js </h2>
+<br/>
+<h2> tailwindcss </h2>
+<br/>
 
 # Notes
 
