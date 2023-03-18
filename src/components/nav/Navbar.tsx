@@ -13,14 +13,14 @@ const Navbar = () => {
             {/* <a href='/home' className="hover:no-underline align-center p-2 text-5xl text-center font-bold">WH</a> */}
             <div className="max-md:hidden flex">
                 <a href="https://github.com/winterhardcastle" className="pt-2 pb-4 " target="_blank" rel="noopener noreferrer">
-                    <img width="40" height="40" src = "./src\assets\logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                    <img width="40" height="40" src = "public\logos\iconmonstr-github-1.svg" alt="Github Logo"/>
                 </a>
                 <a href="https://www.linkedin.com/in/winter-hardcastle/" className="pt-2 pb-4 px-8" target="_blank" rel="noopener noreferrer">
-                    <img width="40" height="40" src = "./src\assets\logos\iconmonstr-linkedin-3.svg" alt="Linkedin Logo"/>
+                    <img width="40" height="40" src = "public\logos\iconmonstr-linkedin-3.svg" alt="Linkedin Logo"/>
                 </a>
                 <a href="https://www.instagram.com/winterhardcastle/" className="pt-2 pb-4 " target="_blank" rel="noopener noreferrer">
-                    <img width="40" height="40" src = "./src\assets\logos\iconmonstr-instagram-11.svg" alt="Instagram Logo"/>
-                </a>
+                    <img width="40" height="40" src = "public\logos\iconmonstr-instagram-11.svg" alt="Instagram Logo"/>
+                </a>    
             </div>
             <div className="p-4 flex items-center">
                 <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {data.el.scrollTop+= scrollToElement('aboutme') + 500}}>ABOUT</a>
