@@ -20,7 +20,7 @@ const AboutMe = () => {
             </p>
           </div>
           <div className="max-md:hidden pb-4">
-            <img className="w-full rounded-2xl" src = "/images/IMG_9493.jpeg"/>
+            <img className="w-full rounded-2xl" src ="/images/IMG_9493.JPEG"/>
           </div>
           </div>
         </div>
