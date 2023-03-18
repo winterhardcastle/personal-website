@@ -21,10 +21,9 @@ export function KeyboardMounts(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/keyboard_mounts.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[4,2,0]} scale={0.02}>
-        <mesh geometry={nodes.Body1.geometry} material={materials['Rilsan Invent Natural - PA 11']} position={[61.18, -87.36, -105.64]} rotation={[-1.31, -0.29, -0.68]} scale={10} />
+      <group position={[8,-15,0]} scale={0.02}>
+        <mesh geometry={nodes.Body1.geometry} material={materials['Rilsan Invent Natural - PA 11']} position={[61.18, -87.36, -105.64]} rotation={[-1.31, -0.5, -1.8]} scale={10} />
       </group>
-      <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />
     </group>
   )
 }

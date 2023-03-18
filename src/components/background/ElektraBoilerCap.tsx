@@ -21,7 +21,7 @@ export function ElektraBoilerCap(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/elektra_boiler_cap.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[3, 3.24, 0]} rotation={[-1.75, 0, 0]} scale={0.01}>
+      <group position={[-3, -17, 1]} rotation={[-1.75, 0, 0]} scale={0.01}>
         <mesh geometry={nodes.Body1.geometry} material={materials['Nylon 6-6 (White)']} rotation={[Math.PI / 9, 0, 0]} scale={10} />
       </group>
       <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />

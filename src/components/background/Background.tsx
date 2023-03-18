@@ -11,19 +11,7 @@ import { ElektraBoilerCap } from './ElektraBoilerCap'
 import { ElektraSteamKnob } from './ElektraSteamKnob'
 
 const Background = () => {
-    const [wheelPos, setWheelPos] = useState(0)
-
-    document.addEventListener("scroll", () => {
-       setWheelPos(window.scrollY)
-    })
     
-    // const test:any = useRef()
-    
-    // useFrame((state, delta) => {
-    //     test.current.rotation.y =+ delta
-    // })
-    
-
     return (
         <>
         {/* <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-[4300px]"> */}

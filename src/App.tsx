@@ -20,7 +20,7 @@ function App() {
   
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
-      <Canvas>
+      <Canvas camera={{ fov: 90, near: 0.5, far: 750, position: [0, 0, 6]}}>
       <ScrollControls pages={3.8} damping={0.1}>
         <Scroll>  
           <Background />

@@ -21,7 +21,7 @@ export function ElektraSteamKnob(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/elektra_steam_knob.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[-1, 0, 0]} rotation={[-1.09, 0, 0]} scale={0.01}>
+      <group position={[-2, -3, 4]} rotation={[-1.09, 0, 2]} scale={0.01}>
         <mesh geometry={nodes.Body1.geometry} material={materials['Phenolic (Amber)']} position={[0, -11.91, 6.17]} scale={10} />
       </group>
       <pointLight intensity={1} decay={2} color="#fcfcfc" position={[-12.44, 12.49, 15.73]} />

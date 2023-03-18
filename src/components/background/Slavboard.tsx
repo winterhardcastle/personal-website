@@ -29,7 +29,7 @@ export function Slavboard(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/slavboard.gltf') as GLTFResult
   return (
     <group {...props} dispose={null}>
-      <group position={[0,0,0]} rotation={[-0.44, 0.44, .75]} scale={0.003}>
+      <group position={[3,-5,4]} rotation={[-0.44, 0.3, .75 ]} scale={0.006}>
         <mesh geometry={nodes.Body1_4.geometry} material={nodes.Body1_4.material} />
         <mesh geometry={nodes.Body1_5.geometry} material={nodes.Body1_5.material} />
         <mesh geometry={nodes.Body1_6.geometry} material={nodes.Body1_6.material} />
