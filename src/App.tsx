@@ -17,7 +17,7 @@ import {useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 function App() {
   const [numPages, setNumPages] = useState(5)
-  const [scrolled, setScrolled] = useState<boolean>()
+  const [counter, setCounter] = useState<boolean>(false)
   
   const computePages = () => {
     const footer = document.getElementById("footer")
@@ -26,10 +26,9 @@ function App() {
   }
 
   const handleEvt = (evt:any) => {
-    if(evt.type === "wheel"){
-      if(scrolled !== true){
-        window.removeEventListener("wheel", handleEvt)
-        setScrolled(true)
+    if(evt.type !== "resize"){
+      if(counter !== true){
+        setCounter(true)
         computePages()
       }
     }else{
@@ -37,7 +36,6 @@ function App() {
     }
   }
 
-  window.addEventListener("wheel", handleEvt)
   window.addEventListener("resize", handleEvt)
 
   return (
@@ -48,7 +46,7 @@ function App() {
           <Background />
         </Scroll>
         <Scroll html>
-          <div className="py-8 px-72">
+          <div onMouseOver={handleEvt} className="py-8 px-72">
           <Navbar />
           <div className='py-72'>
             <div className="inline-block">
