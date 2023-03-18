@@ -1,7 +1,7 @@
 const Software = () => {
     return (
         <div className="p-4 grid gap-6 md:grid-cols-3 grid-cols-2 grid-rows-2"> 
-            <div className="transition ease-in-out group z-0 relative rounded-xl bg-cover hover:bg-[url('public/images/fischer-homepage.png')] flex-col">
+            <div className="transition ease-in-out group z-0 relative rounded-xl bg-cover hover:bg-[url('/images/fischer-homepage.png')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                     <div>  
                         <h1 className="pb-2 text-2xl font-bold uppercase">Fischer</h1>
@@ -15,14 +15,14 @@ const Software = () => {
                     </div>   
                 <div className="flex justify-between align-center p-2">
                     <a href="https://github.com/orgs/FSA2211-Team-6/repositories" className="pt-2 pb-4 pl-24 " target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
                     <a href="https://faction-fischer.vercel.app/posts" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>
             </div>
-            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('public/images/personal-website.png')] flex-col">
+            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('/images/personal-website.png')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Personal Website</h1>
                 <p className="py-2 px-4">
@@ -34,14 +34,14 @@ const Software = () => {
                 </p>
                 <div className="flex justify-between align-center p-2">
                     <a href="https://github.com/winterhardcastle/personal-website" className="pt-2 pb-4 pl-24 " target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
                     <a href="" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>
             </div>
-            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('public/images/AUV.jpg')] flex-col">
+            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('/images/AUV.jpg')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Dive Data Depot</h1>
                 <p className="py-2 px-4">
@@ -53,14 +53,14 @@ const Software = () => {
                 </p>
                 <div className="flex justify-between align-center p-2">
                     <a href="" className="pt-2 pb-4 pl-24 " target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
                     <a href="" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>
             </div>
-            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('public/images/robhinhood-neopixel.jpg')] flex-col">
+            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('/images/robhinhood-neopixel.jpg')] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Stock LED Display</h1>
                 <p className="py-2 px-4">
@@ -72,14 +72,14 @@ const Software = () => {
                 </p>
                 <div className="flex justify-between align-center p-2">
                     <a href="" className="pt-2 pb-4 pl-24 " target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
                     <a href="" className="pt-2 pb-4 pr-24" target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public/logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>
             </div>
-            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('public/images/coffee-castle.png')] flex-col">
+            <div className="group z-0 relative rounded-xl bg-cover hover:bg-[url('images/coffee-castle.png'))] flex-col">
                 <div className="rounded-xl invisible group-hover:visible -z-10 absolute h-full w-full top-0 left-0 bg-[rgba(0,0,0,.6)]"></div>
                 <h1 className="pb-2 text-2xl text-bold uppercase">Coffee Castle</h1>
                 <p className="py-2 px-4">
@@ -91,10 +91,10 @@ const Software = () => {
                 </p>
                 <div className="flex justify-between align-center">
                     <a href="https://github.com/Team-Chrome/GraceShopper" className="pt-2 pb-2 pl-24 " target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public\logos\iconmonstr-github-1.svg" alt="Github Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-github-1.svg" alt="Github Logo"/>
                     </a>
                     <a href="https://graceshopper-uewg.onrender.com/products/6" className="pt-2 pb-2 pr-24" target="_blank" rel="noopener noreferrer">
-                        <img width="40" height="40" src = "public\logos\iconmonstr-globe-8.svg" alt="Web Logo"/>
+                        <img width="40" height="40" src="/logos/iconmonstr-globe-8.svg" alt="Web Logo"/>
                     </a>
                 </div>
             </div>
