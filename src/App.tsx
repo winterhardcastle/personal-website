@@ -12,16 +12,23 @@ import { hackerText } from './utils/functions'
 import { Scroll, ScrollControls, Html, useScroll } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import ContactCTA from './components/nav/ContactCTA'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 
 function App() {
   const scrollHtmlDiv = useRef(null!) as React.MutableRefObject<THREE.Mesh>;
+  const [numPages, setNumPages] = useState(3.8)
   
+  window.addEventListener("resize", () => {
+    const footer = document.getElementById("footer")
+    const pages:number = footer!==null ? (footer.getBoundingClientRect().bottom + 100) / window.innerHeight : 4
+    setNumPages(pages)  
+  })
+
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
       <Canvas camera={{ fov: 90, near: 0.5, far: 750, position: [0, 0, 6]}}>
-      <ScrollControls pages={3.8} damping={0.1}>
+      <ScrollControls pages={numPages} damping={0.1}>
         <Scroll>  
           <Background />
         </Scroll>
