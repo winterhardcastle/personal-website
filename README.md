@@ -4,17 +4,17 @@ The goal of this project is to build a portfolio that conveys my broad experienc
 
 I enjoy using interfaces that manage to be interesting and dymanic despite their simplicity. This website is intended to be an example of this!
 
-# Technologies
+<h2> Technologies </h2>
 
-<h2> Typescript </h2>
+Typescript
 <br/>
-<h2> React.js </h2>
+React.js
 <br/>
-<h2> Three.js </h2>
+Three.js
 <br/>
-<h2> tailwindcss </h2>
+tailwindcss
 <br/>
 
-# Notes
+<h2> Notes </h2>
 
 Hackertext animation inspired by <a href="https://youtu.be/W5oawMJaXbU">Hyperplexed</a>, ported to be a standalone function for ez use in tailwind
