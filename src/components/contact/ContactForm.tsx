@@ -34,9 +34,9 @@ const ContactForm = () => {
             email: form.email,
             phone: form.phone,
             msg: form.msg,
-            }, process.env.VITE_EMAILJS_PUBLIC_KEY);
+            }, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
         
-        setIsLoading(false);
+        setIsLoading(false);    
         setForm({firstName:"",lastName:"", email:"",phone:"",msg:"",})
     }
 
