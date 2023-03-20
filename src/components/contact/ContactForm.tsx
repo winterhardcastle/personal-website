@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Button } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
 import LoadingButton from "@mui/lab/LoadingButton";
 import { hackerText } from "../../utils/functions";
@@ -34,7 +33,7 @@ const ContactForm = () => {
             email: form.email,
             phone: form.phone,
             msg: form.msg,
-            }, import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+            }, process.env.VITE_EMAILJS_PUBLIC_KEY);
         
         setIsLoading(false);
         setForm({firstName:"",lastName:"", email:"",phone:"",msg:"",})
