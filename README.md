@@ -11,6 +11,10 @@ I enjoy using interfaces that manage to be interesting and dymanic despite their
   </a>
 </div> 
 
+<div align="center">
 <h2> Notes </h2>
-Contact form is integrated with EmailJS. 
-Hackertext animation inspired by <a href="https://youtu.be/W5oawMJaXbU">Hyperplexed</a>, ported to be a standalone function for ez use in tailwind
+- 3D elements and use react-three-drei and react-three-fiber instead of vanilla three.js
+- Contact form data is handled with EmailJS. 
+- Hackertext animation inspired by <a href="https://youtu.be/W5oawMJaXbU">Hyperplexed</a>, ported to be a standalone function for ez use in tailwind
+- All 3D models are designed by me. 
+</div>
