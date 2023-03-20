@@ -26,6 +26,7 @@ const ContactForm = () => {
 
         setIsLoading(true);
 
+        console.log(process.env.VITE_EMAILJS_PUBLIC_KEY)
         await emailjs.send("service_jtjho7h","template_78utfvg",{
             from_name: form.firstName + " " + form.lastName,
             firstName: form.firstName,
