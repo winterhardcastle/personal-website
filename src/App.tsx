@@ -37,7 +37,7 @@ function App() {
     }
   }
 
-  window.addEventListener("resize", handleEvt)
+  // window.addEventListener("resize", handleEvt)
 
   return (
   <div className="cursor-crosshair -z-50 absolute top-0 left-0 w-full h-full">
