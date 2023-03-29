@@ -20,12 +20,10 @@ const AboutMe = () => {
             <p className="py-2">
               <span className="font-bold">Interests: </span> Climbing, Cycling, 3D printing, Design, Soccer, Mechanical Keyboards(the list goes on...)
             </p>
-            <p className="font-bold pt-2">
+            <p className="font-bold py-2">
               Current Skillset: 
             </p>
-              <a>
-                <img src="https://skillicons.dev/icons?i=react,ts,js,py,css,html,redux,postgres,express,tailwind,nextjs,sequelize,threejs,vite,git&theme=light" />
-              </a>
+            <img src="https://skillicons.dev/icons?i=react,ts,js,py,css,html,redux,postgres,express,tailwind,nextjs,sequelize,threejs,vite,git&theme=light" />
           </div>
           </div>
         </div>

@@ -8,8 +8,8 @@ const Navbar = () => {
     const data = useScroll()
 
     return (
-        <>
-        <div className="select-none flex justify-center md:justify-between align-center items-center">
+        <div>
+        <div className="z-100 select-none flex justify-center md:justify-between items-center">
             {/* <a href='/home' className="hover:no-underline align-center p-2 text-5xl text-center font-bold">WH</a> */}
             <div className="max-md:hidden flex">
                 <a href="https://github.com/winterhardcastle" className="pt-2 pb-4 " target="_blank" rel="noopener noreferrer">
@@ -34,7 +34,7 @@ const Navbar = () => {
         <a className="md:hidden"target="_blank" rel="noopener noreferrer" href='/Winter Hardcastle_resume.pdf'> 
             <Button color="inherit" sx={{fontFamily: "monospace", fontWeight:"bold", cursor:"crosshair"}} variant="outlined">RESUME</Button>
         </a>
-        </>
+        </div>
     ) 
 }
 
