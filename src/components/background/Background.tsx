@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, Stars } from '@react-three/drei'
+import { Float, OrbitControls, Stars } from '@react-three/drei'
 import {Speaker} from './Speaker'
 import {FilmCanister} from "./FilmCanister"
 import {useState, useEffect, useRef} from 'react'
@@ -21,15 +21,17 @@ const Background = () => {
                 <Stars radius={100} depth={50} count={1000} factor={4} saturation={0} fade speed={1}/>
                 <ambientLight intensity={.2}/>
                 <directionalLight position={[-2, 5, 2]} intensity={1}/>
-                <BikeBrake />
-                <Speaker />
-                <FilmCanister />
-                <Slavboard />
-                <BucklingSpring />
-                <KeyboardMounts />
-                <ElektraBoilerCap />
-                <ElektraSteamKnob />
-                <BadClientele />
+                    <BikeBrake /> 
+                    <Speaker /> 
+                    <FilmCanister /> 
+                    <Slavboard /> 
+                    <BucklingSpring /> 
+                    <KeyboardMounts /> 
+                    <ElektraBoilerCap /> 
+                    <ElektraSteamKnob /> 
+                    <BadClientele />
+                    
+                
             {/* </Canvas> */}
         {/* </div> */}
         </>
