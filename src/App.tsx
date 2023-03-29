@@ -47,7 +47,7 @@ function App() {
           <Background />
         </Scroll>
         <Scroll html>
-          <div onMouseOver={handleEvt} className="py-8 md:px-72">
+          <div onMouseOver={handleEvt} className="py-4 md:px-72">
           <Navbar />
           <div className='py-72'>
             <div className="inline-block">
