@@ -43,7 +43,7 @@ const ContactForm = () => {
     return (
         <div id="contact" className="flex flex-col items-center">
             <h1 onMouseEnter={hackerText} data-value="CONTACT ME!" className="font-bold md:text-5xl text-3xl md:p-24">Contact Me!</h1>
-            <form onSubmit={handleSubmit} className="w-1/2 flex flex-col gap-4">
+            <form onSubmit={handleSubmit} className="md:px-8 md:w-1/2 flex flex-col gap-4">
                 <div className="flex gap-4 justify-between">
                     <input 
                     name="firstName"

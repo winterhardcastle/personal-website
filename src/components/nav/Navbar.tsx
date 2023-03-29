@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-        <div className="select-none flex justify-between align-center items-center">
+        <div className="select-none flex justify-center md:justify-between align-center items-center">
             {/* <a href='/home' className="hover:no-underline align-center p-2 text-5xl text-center font-bold">WH</a> */}
             <div className="max-md:hidden flex">
                 <a href="https://github.com/winterhardcastle" className="pt-2 pb-4 " target="_blank" rel="noopener noreferrer">
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <img width="40" height="40" src = "/logos/iconmonstr-instagram-11.svg" alt="Instagram Logo"/>
                 </a>    
             </div>
-            <div className="p-4 flex justify-center">
+            <div className="p-4 flex align-center items-center justify-center">
                 <a onMouseOver={hackerText} data-value="ABOUT" onClick={() => {data.el.scrollTop+= scrollToElement('aboutme') + 500}}>ABOUT</a>
                 <a onMouseOver={hackerText} data-value="PROJECTS" className="px-12" onClick={() => {data.el.scrollTop+=scrollToElement('projects') + 350}}>PROJECTS</a>
                 <a onMouseOver={hackerText} data-value="CONTACT" className="md:pr-12" onClick={() => {data.el.scrollTop+=data.el.scrollHeight}}>CONTACT</a>
